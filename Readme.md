@@ -2,7 +2,7 @@
 ### Temática del sitio
 Venta de neumáticos multimarca para las categorías: autos, camionetas, utilitarios y motos.
 
-El sitio tendrá una interfase con el usuario atractiva y de fácil navegación con un buscador según atributos del neumático … carrito de compras …presentará ofertas … cotizador de fletes …
+El sitio tendrá una interfase con el usuario atractiva y de fácil navegación con un buscador según atributos del neumático … carrito de compras …presentará ofertas … 
 ### Mercado objetivo
 Usuarios finales que buscan precio, calidad y financiación, talleres mecánicos independientes y gomerías pequeñas de todo el país.
 
