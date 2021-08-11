@@ -25,4 +25,4 @@ Nuevo en el mundo de la programación, actualmente alumno en Digital House.
 Mecanico automotriz, iniciandome en el mundo de la programacion, buscando nuevos horizontes.
 
 ##### Martín Casá: 
-Ing. Industrial, con experiencia en comercialización de químicos y combustibles, banca de inversión, equity research y consultoría en privatizaciones. Actualmente dedicado a la organización de eventos y un proyecto ganadero.
+Ing. Industrial, con experiencia en comercialización de químicos y combustibles, banca de inversión, consultoría en privatizaciones. Actualmente dedicado a la organización de eventos y un proyecto ganadero.
