@@ -1,0 +1,22 @@
+{
+  "name": "grupo_11_besttires",
+  "version": "1.0.0",
+  "description": "Venta de neumáticos multimarca para las categorías: autos, camionetas, utilitarios y motos.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvelazquez719/Grupo_11_BestTires.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvelazquez719/Grupo_11_BestTires/issues"
+  },
+  "homepage": "https://github.com/mvelazquez719/Grupo_11_BestTires#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
