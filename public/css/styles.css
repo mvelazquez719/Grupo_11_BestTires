@@ -8,6 +8,9 @@ body {
    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%237e0606' fill-opacity='0.58'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
    font-size: 16px;
    font-family: 'Prompt', sans-serif;
+   display: flex;
+  flex-direction:column;
+  min-height: 100vh;
 
 }
 
@@ -18,7 +21,7 @@ ul {
    list-style: none;
 }
 .container {
-   width: 100%;
+  flex: 1; 
 }
 /*menu*/
 .nav-main {
@@ -138,6 +141,10 @@ section a{
    margin-top: -50px;
    margin-left: 50px;
 }
+section a img {
+   width: 100%;
+   height: auto;
+}
 .marcas {
    background-color: #ffffff;
 }
@@ -157,7 +164,7 @@ section a{
 .productos {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;   
+   justify-content: space-around;  
 }
 .box-products {    
    background-color: white;
@@ -172,9 +179,8 @@ section a{
 .box-products ul {
    border-top: 2px solid rgb(68, 3, 3);
 }
-.box-products:hover {
-   background-color: rgba(255, 255, 255, 0.83);
-  
+.productos a:hover {
+   opacity: 0.8;  
 }
 .juntos {
    display: flex;
@@ -205,6 +211,8 @@ footer {
    text-align: center;
    font-size: 11px;
    list-style: none;
+   width: 100%;
+   height: 130px;
 }
 .pie {
    padding: 10px;
@@ -267,6 +275,7 @@ footer {
       display: none;
    }
    .buscador input {
+      border-radius: 0;
       width: 150px;
 
    }
