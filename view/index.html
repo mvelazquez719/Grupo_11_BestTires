@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,600;1,300;1,500&display=swap"
+        rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
     <title>Best Fires </title>
 
@@ -13,32 +17,145 @@
 
 <body>
 
-    <header>
-        <div class="main-header-top-bar">
-            <a href="#"><img src="./img/logo.jpg" class="logo"></a>
-            <nav class="list">
-                <ul class="left-navbar">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-                <ul class=carrito>
-                    <li><a href="#"> <i class="fas fa-shopping-cart"></i></a></li>
-                </ul>
-                <ul class="rigth-navbar">
-                    <li><a href="#"> <i class="fas fa-sign-in-alt"></i>Iniciar Sesión </a></li>
-                    <li><a href="#"><i class="far fa-address-card"></i>Registrate </a></li>
+    <div class=container>
+        <nav class="nav-main">
+            <a href="#"></a><img src="./img/logo.jpg" class="logo"></a>
+            <a kref="#" class="hamburguer-button">
+                <i class=" fas fa-bars "> </i>
+            </a>
+            <ul class="nav-menu-left">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Productos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+            <ul class="carrito">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#"> <i class="fas fa-sign-in-alt"></i>Iniciar Sesión </a>
+                </li>
+                <li>
+                    <a href="#"><i class="far fa-address-card"></i>Registrate </a>
+                </li>
 
-                </ul>
-            </nav>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="banner">
+        <div class="buscador">
+            <input type="search" name="busquedaproductos" placeholder="Buscar marcas, medidas...">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
         </div>
+
     </header>
 
+    <section>
+        <a href="#"><img src="./img/fate.png" class="marcas"> </a>
+        <a href="#"><img src="./img/brig.jpg" class="marcas"></a>
+        <a href="#"><img src="./img/Michelin.png" class="marcas"></a>
+        <a href="#"><img src="./img/pirelli.png" class="marcas"></a>
+        <a href="#"><img src="./img/goodyear.jpg" class="marcas"></a>
+
+    </section>
+    <div class="destacados">
+        <h3>DESTACADOS</h3>
+    </div>
+    <div class="productos">
+        <a href="#">
+            <article class="box-products">
+                <img width="200" height="280" class="imagen" src="./img/ofer-mich.webp">
+                <ul>
+                    <div class="juntos">
+                        <li class="precio">$49.634</li>
+                        <li class="descuentos">15% off</li>
+                    </div>
+                    <li class="descripcion">Neumático Michelin Primacy 4 225/50 R17 </li>
+
+                </ul>
+            </article>
+        </a>
+        <a href="#">
+            <article class="box-products">
+                <img width="200" height="280" class="imagen" src="./img/ofer-pir.webp">
+                <ul>
+                    <div class="juntos">
+                        <li class="precio">$9.836</li>
+                        <li class="descuentos">25% off</li>
+                    </div>
+                    <li class="descripcion">Neumático Pirelli Scorpion 205/65 R15 </li>
+
+                </ul>
+            </article>
+        </a>
+        <a href="#">
+            <article class="box-products">
+                <img width="200" height="280" class="imagen" src="./img/ofer-fate.webp">
+                <ul>
+                    <div class="juntos">
+                        <li class="precio">$12.078</li>
+                        <li class="descuentos">20% off</li>
+                    </div>
+                    <li class="descripcion"> Neumático Fate Prestiva 175/70 R13 82 </li>
+
+                </ul>
+            </article>
+        </a>
+        <a href="#">
+            <article class="box-products">
+                <img width="200" height="280" class="imagen" src="./img/ofer-good.webp">
+                <ul>
+                    <div class="juntos">
+                        <li class="precio">$20.836</li>
+                        <li class="descuentos">10% off</li>
+                    </div>
+                    <li class="descripcion">Neumático Goodyear Assurance 205/65 R15 </li>
+
+                </ul>
+            </article>
+        </a>
+    </div>
+    <footer>
+        <li>Copyright © 2021 BestFire</li>
+        <div class="pie">
+            <a href="#">
+                <li>Información de la compañía</li>
+            </a>
+            <li>Contáctenos</li>
+            <a href="#">
+                <li>info Legal y Privacidad</li>
+            </a>
+        </div>
+        <div class="social-list">
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </footer>
 
 </body>
-<main>
-    <img src="./img/banner.jpg" class="banner">
-
-</main>
 
 </html>
