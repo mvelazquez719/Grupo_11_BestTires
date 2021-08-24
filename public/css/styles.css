@@ -115,7 +115,8 @@ opacity: 0.5;
 .buscador input {
    width: 400px;
    color:rgb(68, 3, 3);
-   border: solid 2px #ffffff
+   border: solid 2px #ffffff;
+   border-radius: 0;
 }
 .buscador a {
    color: rgb(68, 3, 3);
@@ -275,7 +276,6 @@ footer {
       display: none;
    }
    .buscador input {
-      border-radius: 0;
       width: 150px;
 
    }
