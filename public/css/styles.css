@@ -117,6 +117,7 @@ opacity: 0.5;
    color:rgb(68, 3, 3);
    border: solid 2px #ffffff;
    border-radius: 0;
+   -webkit-appearance: none;
 }
 .buscador a {
    color: rgb(68, 3, 3);
