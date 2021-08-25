@@ -250,6 +250,44 @@ footer {
    color:darkgreen;
 }
 
+
+/*Register.html*/
+
+.form{
+   
+   margin: 70px 0;
+   display: flex;
+   justify-content: center;
+}
+.main-form {
+   border: 2px solid white;
+   width: 50%;
+   text-align: center;
+   border-radius: 5px;
+}
+.main-form .tit-form{
+   color:white;
+}
+
+.main-form .subtit-form{
+   color:white; 
+   margin: 20px;
+}
+.main-form input{
+   margin: 20px;
+   padding: 7px;
+   
+}
+.main-form button{
+   margin: 20px;
+   padding: 7px;
+   width: 37%;
+}
+
+
+
+
+
 /*media-queris*/
 
 @media (max-width: 1200px){
