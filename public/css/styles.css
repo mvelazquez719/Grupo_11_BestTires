@@ -25,7 +25,7 @@ ul {
 }
 /*menu*/
 .nav-main {
-   font-size: 17px;
+   font-size: 20px;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -55,15 +55,12 @@ ul {
    padding: 5px;  
 }
 .nav-menu-left li a {
-   background-color: rgb(68, 3, 3);
    padding: 10px 20px;
    margin: 40px;
-   border: solid 2px #000000;
-   color: #ffffff;   
+   color: rgb(68, 3, 3);
 }
 .nav-menu-left li a:hover {
-   color: rgb(68, 3, 3);
-   background-color: #ffffff;
+   opacity: 0.5;
 }
 
 /*carrito*/
@@ -78,7 +75,7 @@ ul {
    font-size: 30px;  
 }
 .carrito i:hover {
-   font-size: 40px;
+   opacity: 0.5;
 }
 /*menu rigth*/
 .nav-menu-right{

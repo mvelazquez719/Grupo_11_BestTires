@@ -15,6 +15,6 @@ app.listen(puerto, () => {
   console.log('Server is running on PORT ' + puerto);
 });
 
-app.get("/register.html", (req, res) => {
+app.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/register.html"));
 });
