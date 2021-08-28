@@ -260,7 +260,7 @@ footer {
 }
 .main-form {
    border: 2px solid white;
-   width: 50%;
+   width: 60%;
    text-align: center;
    border-radius: 5px;
 }
@@ -283,6 +283,12 @@ footer {
    width: 37%;
 }
 
+/*login*/
+
+.login-content{width:80%;display: block;margin:none}
+
+
+
 /*productDetail*/
 
 .big-container{padding: 10px; display: flex;background-color: white; width: 100%; border: none;justify-content: space-around;box-sizing: border-box;}
@@ -295,7 +301,6 @@ footer {
 
  .button-form{border-radius: 5px;background-color: red;color: white;padding: 5px 10px;border:none;transition: 1500ms;margin-left: 25px;}
  .button-form:hover{background-color:black;}
-
 
 
 /*media-queris*/
