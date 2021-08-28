@@ -1,3 +1,5 @@
+
+
 * {    
    box-sizing: border-box;
    margin: 0;
@@ -281,7 +283,18 @@ footer {
    width: 37%;
 }
 
+/*productDetail*/
 
+.big-container{padding: 10px; display: flex;background-color: white; width: 100%; border: none;justify-content: space-around;box-sizing: border-box;}
+.header{font-size: 16px; padding: 5px;margin-left: 20px;margin-bottom: 10px;height: 20px;width: 100%;display: flex;box-sizing: border-box;}
+.left-container{padding: 5px;width: 25%; display:flex;border: none;flex-direction: column;box-sizing: border-box;}
+.atribute-container{padding: 5px;display: block ;border:none;width: 100%;margin-left: 20px;margin-bottom: 5px; margin-top: 5px;box-sizing: border-box;}
+.value-container{padding: 5px;display: block;width: 80%;}
+.right-container{padding: 5px; width: 75%; display: flex; border:none;flex-wrap: wrap;box-sizing: border-box; 
+ }
+
+ .button-form{border-radius: 5px;background-color: red;color: white;padding: 5px 10px;border:none;transition: 1500ms;margin-left: 25px;}
+ .button-form:hover{background-color:black;}
 
 
 
@@ -314,6 +327,8 @@ footer {
    .buscador input {
       width: 150px;
 
-   }
+   }/*agregado productDetail*/.big-container{flex-direction: column;}.left-container{width: 100%;} .right-container{width: 100%;}
 }
+
+
 

@@ -18,3 +18,8 @@ app.listen(puerto, () => {
 app.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/register.html"));
 });
+
+app.get("/productDetail", (req, res) => {
+  res.sendFile(path.join(__dirname, "./view/productDetail.html"));
+});
+

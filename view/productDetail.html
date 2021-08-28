@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,600;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+   
+    <title>Best Fires </title>
+
+</head>
+<body>
+
+<header>
+
+    <div class=container>
+        <nav class="nav-main">
+            <a href="#"></a><img src="./img/logo.jpg" class="logo"></a>
+            <a kref="#" class="hamburguer-button">
+                <i class=" fas fa-bars "> </i>
+            </a>
+            <ul class="nav-menu-left">
+                <li>
+                    <a href="/">Inicio</a>
+                </li>
+                <li>
+                    <a href="/productDetail">Productos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+
+                </li>
+            </ul>
+            <ul class="carrito">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#"> <i class="fas fa-sign-in-alt"></i>Iniciar Sesión </a>
+                </li>
+                <li>
+                    <a href="/register"><i class="far fa-address-card"></i>Registrate </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="big-container">
+        <div class="left-container">
+           <div class="header">
+              <p>BUSCA TU NEUMATICO</p>
+            </div>
+            <div>
+            <form action="productDetail.html" method="POST">
+
+                <div class="atribute-container" >
+                <label>Tipo de Vehículo</label>
+                 <select class="value-container" type="text" name="tipovehiculo">
+                <option value="0">Tipo de Vehículo</option>
+                <option value="auto">Auto</option>
+                <option value="camion">Camión</option>
+                <option value="Utilitario">Utilitario</option>
+                <option value="moto">Moto</option>
+                 </select>
+                 </div>
+
+                 <div class="atribute-container" >
+                <label>Ancho</label>
+                <select class="value-container" type="number" name="ancho">
+                <option value="0">Ancho</option>
+                <option value="165">165</option>
+                <option value="175">175</option>
+                <option value="185">185</option>
+                </select>
+                </div>
+
+                 <div class="atribute-container" >
+                <label>Perfil</label>
+                 <select class="value-container" type="number" name="perfil" >
+                <option value="0">Perfil</option>
+                <option value="55">55</option>
+                <option value="60">60</option>
+                <option value="65">65</option>
+                <option value="70">70</option>
+                 </select>
+                </div>
+
+                <div class="atribute-container" >
+                <label>Rodado</label>
+                <select class="value-container" type="number" name="rodado" >
+                <option value="0">Rodado</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                </select>
+                 </div>
+
+                <div class="atribute-container">
+                <label>Marca</label>
+                <select class="value-container" type="text" name="marca" >
+                <option value="0">Marca</option>
+                <option value="firestone">Firestone</option>
+                <option value="michelin">Michelin</option>
+                <option value="fate">Fate</option>
+                <option value="pirelli">Pirelli</option>
+                <option value="bridgestone">bridgestone</option>
+                <option value="goodyear">Goodyear</option>
+                </select>
+                </div>
+
+                <div class="atribute-container">
+                <label>Modelo</label>
+                <select class="value-container" type="text" name="modelo" >
+                <option value="0">Modelo</option>
+                <option value="xxx">XXXX</option>
+                <option value="yyyyy">YYYY</option>
+                <option value="zzzz">ZZZZ</option>                
+                </select>
+                </div>
+
+                <div class="atribute-container">
+                <label>Precio</label>
+                <select class="value-container" type="number" name="precio" >
+                <option value="0">Precio</option>
+                <option value="10000-19999">$10.000 - $19.999</option>
+                <option value="20000-29999">$20.000 - $29.999</option>
+                <option value="30000-39999">$30.000 - $39.999</option>
+                </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar" name="enviar" class="button-form">
+                    <input type="reset" value="Limpiar" name="limpiar" class="button-form">
+    
+                </div>
+
+            </form>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="header">
+                <p>RESULTADO DE TU BUSQUEDA</p> 
+            </div>
+
+            <div class="productos">
+                <a href="#">
+                    <article class="box-products">
+                        <img width="200" height="280" class="imagen" src="./img/ofer-mich.webp">
+                        <ul>
+                            <div class="juntos">
+                                <li class="precio">$49.634</li>
+                                <li class="descuentos">15% off</li>
+                            </div>
+                            <li class="descripcion">Neumático Michelin Primacy 4 225/50 R17 </li>
+    
+                        </ul>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="box-products">
+                        <img width="200" height="280" class="imagen" src="./img/ofer-pir.webp">
+                        <ul>
+                            <div class="juntos">
+                                <li class="precio">$9.836</li>
+                                <li class="descuentos">25% off</li>
+                            </div>
+                            <li class="descripcion">Neumático Pirelli Scorpion 205/65 R15 </li>
+    
+                        </ul>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="box-products">
+                        <img width="200" height="280" class="imagen" src="./img/ofer-fate.webp">
+                        <ul>
+                            <div class="juntos">
+                                <li class="precio">$12.078</li>
+                                <li class="descuentos">20% off</li>
+                            </div>
+                            <li class="descripcion"> Neumático Fate Prestiva 175/70 R13 82 </li>
+    
+                        </ul>
+                    </article>
+                </a>
+                
+     </div>
+    </main>
+
+
+    <footer>
+        <li>Copyright © 2021 BestFire</li>
+        <div class="pie">
+            <a href="#">
+                <li>Información de la compañía</li>
+            </a>
+            <li>Contáctenos</li>
+            <a href="#">
+                <li>info Legal y Privacidad</li>
+            </a>
+        </div>
+        <div class="social-list">
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
