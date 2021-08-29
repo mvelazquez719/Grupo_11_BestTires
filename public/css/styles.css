@@ -26,6 +26,7 @@ ul {
   flex: 1; 
 }
 /*menu*/
+
 .nav-main {
    font-size: 20px;
    display: flex;
@@ -47,6 +48,7 @@ ul {
 
 
 /*menu left*/
+
 .nav-menu-left {
    display: flex;
    flex-direction: row;
@@ -66,6 +68,7 @@ ul {
 }
 
 /*carrito*/
+
 .carrito {
    display: flex;
    flex : 1;
@@ -160,6 +163,8 @@ section a img {
    color: rgb(68, 3, 3);
    font-weight: bold;   
 }
+
+
 /*productos*/
 
 .productos {
@@ -263,6 +268,7 @@ footer {
    width: 60%;
    text-align: center;
    border-radius: 5px;
+   background-color: black;
 }
 .main-form .tit-form{
    color:white;
@@ -289,6 +295,7 @@ footer {
 
 
 
+
 /*productDetail*/
 
 .big-container{padding: 10px; display: flex;background-color: white; width: 100%; border: none;justify-content: space-around;box-sizing: border-box;}
@@ -303,6 +310,7 @@ footer {
  .button-form:hover{background-color:black;}
 
  /*carrito*/
+
 .changuito {
    border: 1px white solid;
    padding: 20px;
@@ -314,6 +322,7 @@ footer {
    margin-top: 50px;
    max-width: 800px;
    text-align: center;
+   margin-bottom: 50px;
    
 }
 .tit{
@@ -349,7 +358,6 @@ footer {
     margin:auto;
     margin-top: 10px;
     margin-bottom: 10px;
-
  }
  .cant-men {
     width: 10px;
@@ -365,6 +373,7 @@ footer {
  .precio-p{
     color: white;
     padding-bottom: 50px;
+    
  }
  .button-delete{
     padding:5px 10px;
@@ -377,19 +386,9 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*media-queris*/
+
+
 @media (min-width: 361px){
    .element{
       flex-direction: column;
@@ -403,6 +402,9 @@ footer {
       margin-top: 10px;
       margin-bottom: 10px;
    }
+   .precio-p{
+      width: initial;
+   }
 }
 
 @media (min-width: 769px){
@@ -412,6 +414,9 @@ footer {
    }
    .changuito{
       width: 80%;
+   }
+   .precio-p{
+      width: 100px;
    }
 }
 
