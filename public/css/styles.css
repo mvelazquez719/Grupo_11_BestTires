@@ -292,7 +292,13 @@ footer {
 /*login*/
 
 .login-content{width:80%;display: block;margin:none}
-
+.button-register a{
+   color:#000000;
+   font-weight: bold;
+}
+.button-register button:hover{
+  background-color: rgb(136, 132, 132)
+}
 
 
 
@@ -383,6 +389,23 @@ footer {
     margin-right: 40px;
  }
  
+
+
+/*contacto*/
+
+.contacto {
+   display: flex;
+   background-color: #ffffff;
+   justify-content: center;
+   height: 100px;
+   margin: 70px 0;
+}
+
+.contacto a {
+   color: black;
+   font-size: 50px;
+   margin: 15px 50px;
+}
 
 
 
