@@ -37,3 +37,7 @@ https://trello.com/b/FgmIP1IJ/besttires-proyect
 
 https://trello.com/b/FgmIP1IJ/besttires-proyect
 >>>>>>> 11bb626d4a664a8f0295fc0257ec282fd2193580
+
+
+##FeedBack sprint 1
+- Excelente trabajo muchachos, me encanta la disposicion de los bloques y la manera como organizaron su trabajo. calificacion (10/10)
