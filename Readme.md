@@ -28,6 +28,6 @@ Mecanico automotriz, iniciandome en el mundo de la programacion, buscando nuevos
 ##### Martín Casá: 
 Ing. Industrial, con experiencia en comercialización de químicos y combustibles, banca de inversión, consultoría en privatizaciones. Actualmente dedicado a la organización de eventos y un proyecto ganadero.
 
-##### Tablero Trello (Enlace)
+### Tablero Trello (Enlace)
 
 https://trello.com/b/FgmIP1IJ/besttires-proyect
