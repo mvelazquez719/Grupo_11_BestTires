@@ -31,3 +31,8 @@ Ing. Industrial, con experiencia en comercialización de químicos y combustible
 ### Tablero Trello (Enlace)
 
 https://trello.com/b/FgmIP1IJ/besttires-proyect
+
+
+## FeedBack sprint 1
+- Excelente trabajo muchachos, me encanta la disposicion de los bloques y la manera como organizaron su trabajo. calificacion (10/10)
+>>>>>>> cc76455131b87a1f244257c0bc72bcd7cfca2884

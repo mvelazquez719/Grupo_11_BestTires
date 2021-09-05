@@ -1,5 +1,3 @@
-
-
 * {    
    box-sizing: border-box;
    margin: 0;
@@ -397,21 +395,35 @@ footer {
    display: flex;
    background-color: #ffffff;
    justify-content: center;
-   height: 100px;
    margin: 70px 0;
+   width: 100%;
+   height: 200px;
+   flex-wrap: wrap;
+   align-items: center;
 }
 
 .contacto a {
    color: black;
-   font-size: 50px;
-   margin: 15px 50px;
+   font-size: 40px;
+   margin: 15px 30px;
 }
 
 
 
 /*media-queris*/
 
-
+@media (max-width: 361px){
+   .contacto {
+      height: 400px;
+       
+    }
+    
+    .contacto a {
+       font-size: 40px;
+ 
+    }
+   
+}
 @media (min-width: 361px){
    .element{
       flex-direction: column;
@@ -428,6 +440,15 @@ footer {
    .precio-p{
       width: initial;
    }
+   .contacto {
+      height: 400px;
+       
+    }
+    
+    .contacto a {
+       font-size: 40px;
+ 
+    }
 }
 
 @media (min-width: 769px){
@@ -441,6 +462,7 @@ footer {
    .precio-p{
       width: 100px;
    }
+   
 }
 
 @media (max-width: 1200px){
