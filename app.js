@@ -2,20 +2,21 @@ const express = require("express");
 const app = express();
 const path = require("path");
 app.use(express.static(path.join(__dirname, "./public")));
-app.use(express.static(path.join(__dirname, "./src")));
-const index = require("./src/routes/index.js");
-const users = require("./src/routes/users.js");
+
+const rutasIndex = require("./src/routes/index.js");
+const rutasUsers = require("./src/routes/users.js");
 
 
 
 
 
-app.use(express.static('./public'))
+app.use(express.static('./views'))
 app.set('view engine','ejs');
 
-app.use("/", index);
-app.use("/register", index);
-app.use("/login", index);
+app.use("/", rutasIndex);
+app.use("/register", rutasUsers);
+
+//app.use("/login", index);
 
 const puerto = process.env.PORT || 3500
 app.listen(puerto, () => {
