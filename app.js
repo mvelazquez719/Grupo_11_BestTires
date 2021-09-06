@@ -17,7 +17,7 @@ app.set('view engine','ejs');
 
 app.use("/", index);
 app.use("/register", index);
-app.use("/login", users);
+app.use("/login", index);
 
 const puerto = process.env.PORT || 3500
 app.listen(puerto, () => {
