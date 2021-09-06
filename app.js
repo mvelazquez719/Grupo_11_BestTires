@@ -10,6 +10,11 @@ app.get("/", (req, res) => {
 
 
 
+app.use(express.static('./public'))
+app.set('view engine','ejs');
+
+
+
 const puerto = process.env.PORT || 3500
 app.listen(puerto, () => {
   console.log('Server is running on PORT ' + puerto);
