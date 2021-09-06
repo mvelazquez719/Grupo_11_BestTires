@@ -6,9 +6,7 @@ app.use(express.static(path.join(__dirname, "./src")));
 const index = require("./src/routes/index.js");
 const users = require("./src/routes/users.js");
 
-//app.get("/", (req, res) => {
-//  res.sendFile(path.join(__dirname, "./view/index.html"));
-//});
+
 
 
 
@@ -24,17 +22,21 @@ app.listen(puerto, () => {
   console.log('Server is running on PORT ' + puerto);
 });
 
-app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname, "./view/register.html"));
-});
+//app.get("/", (req, res) => {
+//  res.sendFile(path.join(__dirname, "./view/index.html"));
+//});
+
+//app.get("/register", (req, res) => {
+//  res.sendFile(path.join(__dirname, "./view/register.html"));
+//});
 
 app.get("/productDetail", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/productDetail.html"));
 });
 
-app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "./view/login.html"));
-});
+//app.get("/login", (req, res) => {
+//  res.sendFile(path.join(__dirname, "./view/login.html"));
+//});
 
 app.get("/carrito", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/carrito.html"));
