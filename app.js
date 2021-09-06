@@ -2,18 +2,22 @@ const express = require("express");
 const app = express();
 const path = require("path");
 app.use(express.static(path.join(__dirname, "./public")));
+app.use(express.static(path.join(__dirname, "./src")));
+const index = require("./src/routes/index.js");
+const users = require("./src/routes/users.js");
 
-
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./view/index.html"));
-});
+//app.get("/", (req, res) => {
+//  res.sendFile(path.join(__dirname, "./view/index.html"));
+//});
 
 
 
 app.use(express.static('./public'))
 app.set('view engine','ejs');
 
-
+app.use("/", index);
+app.use("/register", index);
+app.use("/login", users);
 
 const puerto = process.env.PORT || 3500
 app.listen(puerto, () => {
