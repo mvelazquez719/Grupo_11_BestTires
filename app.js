@@ -10,13 +10,12 @@ const rutasUsers = require("./src/routes/users.js");
 
 
 
-app.use(express.static('./views'))
+app.use(express.static('./public'))
 app.set('view engine','ejs');
 
-app.use("/", rutasIndex);
-app.use("/register", rutasUsers);
-
-//app.use("/login", index);
+app.use('/', rutasIndex);
+app.use('/register', rutasIndex);
+app.use('/login', rutasIndex);
 
 const puerto = process.env.PORT || 3500
 app.listen(puerto, () => {
