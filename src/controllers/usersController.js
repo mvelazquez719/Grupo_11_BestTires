@@ -5,9 +5,10 @@ const usersController = {
     
     login:(req, res) => {
        res.render("login");
-    }
-    
-    
+    },
+    contacto:(req, res) => {
+        res.render("contacto");
+     }
 }
 
 module.exports= usersController;
