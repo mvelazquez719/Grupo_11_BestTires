@@ -11,4 +11,4 @@ router.get("/contacto", usersController.contacto);
 router.get("/productDetail", productsController.productDetail);
 router.get("/carrito", productsController.carrito);
 
-module.exports = router ;
+module.exports = router;

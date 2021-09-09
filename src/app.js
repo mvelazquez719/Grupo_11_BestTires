@@ -6,6 +6,7 @@ const rutasIndex = require("./routes/index.js");
 
 app.use(express.static('./public'))
 app.set('view engine','ejs');
+app.set('views', path.join(__dirname,'./views'))
 app.use('/', rutasIndex);
 const puerto = process.env.PORT || 3500
 app.listen(puerto, () => {
