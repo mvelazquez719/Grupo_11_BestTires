@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-<%- include("head") -%>
+<%- include("partials/head") -%>
 
     <body>
         <div class=container>
-            <%- include("header") -%>
+            <%- include("partials/header") -%>
                 <div class="banner">
                     <div class="buscador">
                         <input type="search" name="busquedaproductos" placeholder="Buscar marcas, medidas...">
@@ -81,33 +81,7 @@
                     </a>
                 </div>
         </div>
-        <footer>
-            <li>Copyright © 2021 BestFire</li>
-            <div class="pie">
-                <a href="#">
-                    <li>Información de la compañía</li>
-                </a>
-                <li>Contáctenos</li>
-                <a href="#">
-                    <li>info Legal y Privacidad</li>
-                </a>
-            </div>
-            <div class="social-list">
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-
-        </footer>
+        <%- include("partials/footer") -%>
 
     </body>
 
