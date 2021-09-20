@@ -4,8 +4,10 @@ const productsController = {
     },    
     carrito: (req, res) => {
         res.render ('carrito');
-    }   
-     
+    },   
+    cargaProduc: (req, res) => {
+        res.render ('cargaProduc'); 
+    }
 }
 
 module.exports= productsController;

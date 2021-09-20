@@ -10,5 +10,6 @@ router.get("/login", usersController.login);
 router.get("/contacto", usersController.contacto);
 router.get("/productDetail", productsController.productDetail);
 router.get("/carrito", productsController.carrito);
+router.get("/cargaProduc",productsController.cargaProduc);
 
 module.exports = router;

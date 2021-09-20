@@ -266,14 +266,14 @@ footer {
    width: 60%;
    text-align: center;
    border-radius: 5px;
-   background-color: black;
+   background-color:rgb(225, 225, 225); 
 }
 .main-form .tit-form{
-   color:white;
+   color:black;
 }
 
 .main-form .subtit-form{
-   color:white; 
+   color:black); 
    margin: 20px;
 }
 .main-form input{
@@ -297,7 +297,9 @@ footer {
 .button-register button:hover{
   background-color: rgb(136, 132, 132)
 }
-
+.subtit-form {
+   color:black;
+}
 
 
 /*productDetail*/
@@ -408,6 +410,50 @@ footer {
    margin: 15px 30px;
 }
 
+/*register*/
+.cargaP{
+   display: flex;
+justify-content: center;
+}
+.formulario {
+   background-color:rgb(225, 225, 225); 
+   width: 100vh;
+   margin:5vh;
+   padding: 5vh;
+   text-align: center;
+
+}
+
+.datospersonales input{
+   padding: 10px 30px;
+   border: solid black 1px;
+}
+
+.datosProduct {
+  
+   flex-direction: column;
+   display: flex;
+   align-items: center;
+   
+}
+.datosProduct input {
+   margin: 5px;
+}
+
+.labelform {  
+   font-size: 15px;
+   padding: 10px 30px;    
+}
+.exam input {
+   background-color: #ffffff;
+}
+
+
+.button-register a{
+   color:rgba(0, 0, 0, 0.7);
+   padding: 20px 40px;
+   text-decoration: none;
+}
 
 
 /*media-queris*/

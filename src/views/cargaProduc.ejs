@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include("partials/head") -%>
+
+    <body>
+        
+            <%- include("partials/header") -%>
+        <main class= "cargaP">
+            <div class="formulario">
+                <h2 class="tit-form">Carga de Productos</h2>
+                <form action="#" method="get" class="Carga-product">
+                    <div class="datosProduct">
+                        <input type="text" required placeholder="Id del producto" name="IdProduct">
+                        <input type="text" required placeholder="Nombre producto" name="NombredeProduct">
+                        <input type="text" required placeholder="Detalle producto" name="detalleProduct">
+                        <input type="text" required placeholder="Precio Producto" name="precioProduct">
+                        <div class="labelform">
+                            <label>Imagen del Producto</label>
+                        </div>
+                        <div class="exam">
+                            <input type="file" name="img" accept=".jpg">
+                        </div>
+
+                        <div class="button-register">
+                            <button type="submit"><a href="/">Cargar Producto</a></button>
+                            <button type="reset"><a href="/">Cancelar</a></button>
+
+                        </div>
+                </form>
+            </div>
+        </main>
+        <%- include("partials/footer") -%>
+
+    </body>
+
+</html>
