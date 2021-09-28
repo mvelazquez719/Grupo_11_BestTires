@@ -8,6 +8,9 @@ const productsController = {
     cargaProduc: (req, res) => {
         res.render ('cargaProduc'); 
     }
+    editProduc: (req, res) => {
+        res.render ('editProduc'); 
+    }
 }
 
 module.exports= productsController;
