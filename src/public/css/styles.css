@@ -224,7 +224,7 @@ section a img {
 }
 .botones a{
    border: 2px solid black;
-   border-radius: 10px;
+   
    margin: 6px;
    padding: 4px;
    text-align: center;
@@ -234,6 +234,17 @@ section a img {
    background-color: green;
    color: white;
 
+}
+.eliminar a {
+   background-color: white ;
+   color: rgb(197, 6, 6);
+   
+   font-weight: bold;
+   padding: 0 11vh;
+}
+.eliminar a:hover {
+   background-color: rgb(197, 6, 6) ;
+   color:white;   
 }
 
 
@@ -321,7 +332,10 @@ footer {
 
 /*login*/
 
-.login-content{width:80%;display: block;margin:none}
+.login-content{width:80%;
+   display: block;
+   margin:none;
+}
 .button-register a{
    color:#000000;
    font-weight: bold;
@@ -334,7 +348,7 @@ footer {
 }
 
 
-/*productDetail*/
+/*products*/
 
 .big-container{
    padding: 10px;

@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <%- include("partials/head") -%>
+<%- include("partials/head") -%>
 
     <body>
-        
+        <div class=container>
             <%- include("partials/header") -%>
-        <main class= "cargaP">
-            <div class="formulario">
-                <h2 class="tit-form">Editar Producto</h2>
-                <form action="#" method="get" class="Carga-product">
-                    <div class="datosProduct">
-                        <input type="text" required placeholder="Id" name="IdProduct">
-                        <input type="text" required placeholder="Tipo de Vehiculo" name="TypeVehicle">
-                        <input type="text" required placeholder="Ancho" name="detalleProduct">
-                        <input type="text" required placeholder="Perfil" name="ProfileProduct">
-                        <input type="text" required placeholder="Rodado" name="Rolled">
-                        <input type="text" required placeholder="Marca" name="mark">
-                        <input type="text" required placeholder="Modelo" name="model">
-                        <input type="text" required placeholder="Precio" name="priceProduct">
-                        <div class="labelform">
-                            <label>Imagen del Producto</label>
-                        </div>
-                        <div class="exam">
-                            <input type="file" name="img" accept=".jpg">
-                        </div>
+                <main class="cargaP">
+                    <div class="formulario">
+                        <h2 class="tit-form">Editar Producto</h2>
+                        <form action="#" method="get" class="Carga-product">
+                            <div class="datosProduct">
+                                <input type="text" required placeholder="Id" name="IdProduct">
+                                <input type="text" required placeholder="Tipo de Vehiculo" name="TypeVehicle">
+                                <input type="text" required placeholder="Ancho" name="detalleProduct">
+                                <input type="text" required placeholder="Perfil" name="ProfileProduct">
+                                <input type="text" required placeholder="Rodado" name="Rolled">
+                                <input type="text" required placeholder="Marca" name="mark">
+                                <input type="text" required placeholder="Modelo" name="model">
+                                <input type="text" required placeholder="Precio" name="priceProduct">
+                                <div class="labelform">
+                                    <label>Imagen del Producto</label>
+                                </div>
+                                <div class="exam">
+                                    <input type="file" name="img" accept=".jpg">
+                                </div>
 
-                        <div class="button-register">
-                            <button type="submit"><a href="/">Editar Producto</a></button>
-                            <button type="reset"><a href="/">Cancelar</a></button>
+                                <div class="button-register">
+                                    <button type="submit"><a href="/">Editar Producto</a></button>
+                                    <button type="reset"><a href="/">Cancelar</a></button>
 
-                        </div>
-                </form>
-            </div>
-        </main>
+                                </div>
+                                <div class= "eliminar"> 
+                                    <button type="delete"><a href="/">Eliminar producto</a></button>
+                                </div>
+
+                            </div>   
+                        </form>
+                    </div>
+                </main>
+        </div>
         <%- include("partials/footer") -%>
 
     </body>
