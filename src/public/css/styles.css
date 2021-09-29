@@ -204,6 +204,38 @@ section a img {
    color: rgb(136, 132, 132);
    text-align: center;
 }
+/*Product ID*/
+.proDet{   
+   background-color: white;
+    width: 100%;
+   justify-content: space-around;
+   }
+.productsDetails {
+   display: flex;
+   justify-content: space-around;
+}
+.descrip {
+   list-style: none;
+  
+}
+.botones {
+   display: flex;
+   flex-direction: column;
+}
+.botones a{
+   border: 2px solid black;
+   border-radius: 10px;
+   margin: 6px;
+   padding: 4px;
+   text-align: center;
+   color: black;
+}
+.botones a:hover {
+   background-color: green;
+   color: white;
+
+}
+
 
 /*footer*/
 
@@ -304,16 +336,25 @@ footer {
 
 /*productDetail*/
 
-.big-container{padding: 10px; display: flex;background-color: white; width: 100%; border: none;justify-content: space-around;box-sizing: border-box;}
-.header{font-size: 16px; padding: 5px;margin-left: 20px;margin-bottom: 10px;height: 20px;width: 100%;display: flex;box-sizing: border-box;}
-.left-container{padding: 5px;width: 25%; display:flex;border: none;flex-direction: column;box-sizing: border-box;}
-.atribute-container{padding: 5px;display: block ;border:none;width: 100%;margin-left: 20px;margin-bottom: 5px; margin-top: 5px;box-sizing: border-box;}
-.value-container{padding: 5px;display: block;width: 80%;}
-.right-container{padding: 5px; width: 75%; display: flex; border:none;flex-wrap: wrap;box-sizing: border-box; 
+.big-container{
+   padding: 10px;
+   display: flex;
+   background-color: white;
+   width: 100%; 
+   border: none;
+   justify-content: space-around;
+   box-sizing: border-box;
+   }
+
+.right-container{
+   padding: 5px;
+   width: 75%;
+   display: flex; 
+   border:none;
+   flex-wrap: wrap;
+   box-sizing: border-box; 
  }
 
- .button-form{border-radius: 5px;background-color: red;color: white;padding: 5px 10px;border:none;transition: 1500ms;margin-left: 25px;}
- .button-form:hover{background-color:black;}
 
  /*carrito*/
 
@@ -413,7 +454,7 @@ footer {
 /*register*/
 .cargaP{
    display: flex;
-justify-content: center;
+   justify-content: center;
 }
 .formulario {
    background-color:rgb(225, 225, 225); 
@@ -429,6 +470,8 @@ justify-content: center;
    border: solid black 1px;
 }
 
+/*carga producto*/
+
 .datosProduct {
   
    flex-direction: column;
@@ -438,11 +481,15 @@ justify-content: center;
 }
 .datosProduct input {
    margin: 5px;
+   text-align: center; 
+
 }
 
 .labelform {  
    font-size: 15px;
-   padding: 10px 30px;    
+   padding: 10px 30px;   
+   
+   
 }
 .exam input {
    background-color: #ffffff;

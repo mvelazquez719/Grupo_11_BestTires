@@ -1,15 +1,18 @@
 const productsController = {
-    productDetail: (req, res) => {
-        res.render('productDetail');
+    products: (req, res) => {
+        res.render('products');
     },    
     carrito: (req, res) => {
         res.render ('carrito');
     },   
     cargaProduc: (req, res) => {
         res.render ('cargaProduc'); 
-    }
+    },
     editProduc: (req, res) => {
         res.render ('editProduc'); 
+    },
+    productID: (req, res) => {
+        res.render ('productID'); 
     }
 }
 
