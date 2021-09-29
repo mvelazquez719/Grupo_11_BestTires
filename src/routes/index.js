@@ -10,7 +10,12 @@ router.get("/login", usersController.login);
 router.get("/contacto", usersController.contacto);
 router.get("/products", productsController.products);
 router.get("/carrito", productsController.carrito);
+
+/*** CREATE ONE PRODUCT ***/ 
 router.get("/cargaProduc",productsController.cargaProduc);
+router.post("/cargaProduc",productsController.store);
+
+
 router.get("/editProduc",productsController.editProduc);
 router.get("/productID",productsController.productID);
 
