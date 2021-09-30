@@ -1,1 +1,11 @@
-[{"id":1,"image":"img-sin-imagen-disponible.jpg"}]
+[
+    {
+        "id": 1,
+        "ancho": "asd",
+        "perfil": "asd",
+        "rodado": "asd",
+        "marca": "asd",
+        "modelo": "asd",
+        "precio": "asd"
+    }
+]

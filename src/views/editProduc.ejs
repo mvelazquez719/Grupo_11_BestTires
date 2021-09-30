@@ -11,8 +11,7 @@
                         <h2 class="tit-form">Editar Producto</h2>
                         <form action="/editProduc/<%= product.id %>?_method=PUT" method="POST" class="Carga-product">
                             <div class="datosProduct">
-                                <input type="text" required placeholder="Id" name="IdProduct" >
-                                <input type="text" required placeholder="Tipo de Vehiculo" name="TypeVehicle">
+                                
                                 <input type="text" required placeholder="Ancho" name="detalleProduct" value="<%= product.ancho %>">
                                 <input type="text" required placeholder="Perfil" name="ProfileProduct" value="<%= product.perfil %>">
                                 <input type="text" required placeholder="Rodado" name="Rolled" value="<%= product.rodado %>">

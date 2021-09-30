@@ -1,13 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+let model = require('../model/products.json')
 
-
-const productsFilePath = path.join(__dirname, '../model/products.json');
-let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productsController = {
     products: (req, res) => {
-        res.render('products',{products: products});
+        res.render('products',{products: model});
     },    
     carrito: (req, res) => {
         res.render ('carrito');
@@ -16,26 +14,21 @@ const productsController = {
         res.render ('cargaProduc'); 
     },
     store: (req, res) => {
-        
         let objeto = {
 			
-            id: products.length + 1,
+            id: model.length + 1,
 			ancho: req.body.detalleProduct,
 			perfil: req.body.ProfileProduct,
 			rodado: req.body.Rolled,
 			marca: req.body.mark,
-			modelo: req.body.model,
+	     	modelo: req.body.model,
             precio: req.body.priceProduct,
-			image: "img-sin-imagen-disponible.jpg"
-		};
-        
-
-        products.push(objeto);
-		let productsJSON = JSON.stringify(products);
-		fs.writeFileSync(productsFilePath, productsJSON),JSON.stringify(productsJSON, null, 4),
-        {encoding:"utf-8"};
+        }
+        model.push(objeto)
+        fs.writeFileSync(path.join(__dirname,'../model/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
 
         res.redirect ('products')
+        
 
     },
     
@@ -69,15 +62,17 @@ const productsController = {
     },
     productID: (req, res) => {
         let id = req.params.id;
-		let product = products.find(elemento => elemento.id == id)
+		let product = model.find(elemento => elemento.id == id)
 		res.render('productID', {product: product});
         
     },
     destroy : (req, res) => {
-		let id = req.params.id;
-		products=products.filter(elemento => elemento.id != id);
-		let productsJSON = JSON.stringify(products);
-		fs.writeFileSync(productsFilePath, productsJSON);
+        const idBuscado = req.params.id
+         model = model.filter (item => item.id != idBuscado)
+        fs.writeFileSync(path.join(__dirname,'../model/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
+
+        res.render ('products', {products:model})
+	
 		
 	}
 }
