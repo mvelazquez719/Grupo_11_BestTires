@@ -13,7 +13,7 @@ const usersController = {
     storee: (req, res) => {
         
         let objetoo = {
-			id: users.slice(-1)[0].id + 1,
+			id: users.length + 1,
 			nombre: req.body.firstName,
 			apellido: req.body.lastName,
 			nombreusuario: req.body.nameUsers,
