@@ -1,11 +1,74 @@
 [
     {
         "id": 1,
-        "ancho": "asd",
-        "perfil": "asd",
-        "rodado": "asd",
-        "marca": "asd",
-        "modelo": "asd",
-        "precio": "asd"
+        "ancho": "185",
+        "perfil": "60",
+        "rodado": "14",
+        "marca": "Neumatico Pirelli",
+        "modelo": "Formula Energy",
+        "precio": "13708"
+    },
+    {
+        "id": 2,
+        "ancho": "195",
+        "perfil": "60",
+        "rodado": "15",
+        "marca": "Neumatico Fate",
+        "modelo": "Prestiva",
+        "precio": "14755"
+    },
+    {
+        "id": 3,
+        "ancho": "175",
+        "perfil": "65",
+        "rodado": "14",
+        "marca": "Neumatico Firestone",
+        "modelo": "F-Series",
+        "precio": "13481"
+    },
+    {
+        "id": 4,
+        "ancho": "185",
+        "perfil": "60",
+        "rodado": "15",
+        "marca": "Neumatico Bridgestone",
+        "modelo": "Ecopia",
+        "precio": "19753"
+    },
+    {
+        "id": 5,
+        "ancho": "185",
+        "perfil": "65",
+        "rodado": "14",
+        "marca": "Neumatico FireHawk",
+        "modelo": "p700",
+        "precio": "14913"
+    },
+    {
+        "id": 6,
+        "ancho": "205",
+        "perfil": "65",
+        "rodado": "15",
+        "marca": "Neumatico GoodYear",
+        "modelo": "Asurance",
+        "precio": "19699"
+    },
+    {
+        "id": 7,
+        "ancho": "195",
+        "perfil": "55",
+        "rodado": "15",
+        "marca": "Neumatico Fate",
+        "modelo": "MaxiSport",
+        "precio": "17417"
+    },
+    {
+        "id": 8,
+        "ancho": "235",
+        "perfil": "65",
+        "rodado": "17",
+        "marca": "Neumatico Hankook",
+        "modelo": "Dynaprop",
+        "precio": "36500"
     }
 ]

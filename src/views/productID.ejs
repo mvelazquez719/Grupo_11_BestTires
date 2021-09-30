@@ -27,6 +27,7 @@
                                 <div class="botones">
                                     <a href="#">Comprar</a>
                                     <a href="/editProduc/<%= product.id %>">Editar</a>
+
                                     <form method="POST"  action="/delete/<%= product.id %>?_method=DELETE">
                                         <input type="submit" value="Eliminar" name="delete" class="btnForm">
                                     </form>

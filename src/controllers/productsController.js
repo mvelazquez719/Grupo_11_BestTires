@@ -34,32 +34,30 @@ const productsController = {
     
     editProduc: (req, res) => {
         let id = req.params.id;
-		let product = products.find(elemento => elemento.id == id)
+		let product = model.find(elemento => elemento.id == id)
 		res.render ('editProduc',{product: product}); 
         
     },
     update: (req, res) => {
         let id = req.params.id;
-		products.forEach(elemento => {
+		model.forEach(elemento => {
 			if (elemento.id == id){
-				elemento.ancho = req.body.ancho;
-				elemento.perfil = req.body.perfil;
-				elemento.rodado = req.body.rodado;
-				elemento.marca = req.body.marca;
-				elemento.modelo = req.body.modelo;
-                elemento.precio = req.body.precio;
-                
+				elemento.ancho = req.body.detalleProduct;
+				elemento.perfil = req.body.ProfileProduct;
+				elemento.rodado = req.body.Rolled;
+				elemento.marca = req.body.mark;
+				elemento.modelo = req.body.model;
+                elemento.precio = req.body.priceProduct;
 				//elemento.image: ""
 			}
 		});
-
-        let productsJSON = JSON.stringify(products);
-		fs.writeFileSync(productsFilePath, productsJSON),
+		
+		
+        fs.writeFileSync(path.join(__dirname,'../model/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
+        res.redirect ('products')
         
-
-        res.redirect('/productID/' + id);
-
     },
+
     productID: (req, res) => {
         let id = req.params.id;
 		let product = model.find(elemento => elemento.id == id)
