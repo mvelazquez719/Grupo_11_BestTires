@@ -16,45 +16,12 @@
                             </div>
 
                             <div class="productos">
-                                <a href="#">
-                                    <article class="box-products">
-                                        <img width="200" height="280" class="imagen" src="./img/ofer-mich.webp">
-                                        <ul>
-                                            <div class="juntos">
-                                                <li class="precio">$49.634</li>
-                                                <li class="descuentos">15% off</li>
-                                            </div>
-                                            <li class="descripcion">Neumático Michelin Primacy 4 225/50 R17 </li>
-
-                                        </ul>
-                                    </article>
-                                </a>
-                                <a href="#">
-                                    <article class="box-products">
-                                        <img width="200" height="280" class="imagen" src="./img/ofer-pir.webp">
-                                        <ul>
-                                            <div class="juntos">
-                                                <li class="precio">$9.836</li>
-                                                <li class="descuentos">25% off</li>
-                                            </div>
-                                            <li class="descripcion">Neumático Pirelli Scorpion 205/65 R15 </li>
-
-                                        </ul>
-                                    </article>
-                                </a>
-                                <a href="#">
-                                    <article class="box-products">
-                                        <img width="200" height="280" class="imagen" src="./img/ofer-fate.webp">
-                                        <ul>
-                                            <div class="juntos">
-                                                <li class="precio">$12.078</li>
-                                                <li class="descuentos">20% off</li>
-                                            </div>
-                                            <li class="descripcion"> Neumático Fate Prestiva 175/70 R13 82 </li>
-
-                                        </ul>
-                                    </article>
-                                </a>
+                                <% products.forEach(function(product){ %> <!--Recordar que product es cada elemento de la lista-->
+                                    <!--productCard-->
+                                    <%- include('partials/productCards', {product}) %>
+                                    <!--/productCard-->
+                                <% }); %>
+                               
 
                             </div>
                 </main>

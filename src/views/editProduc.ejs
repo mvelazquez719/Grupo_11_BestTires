@@ -9,16 +9,16 @@
                 <main class="cargaP">
                     <div class="formulario">
                         <h2 class="tit-form">Editar Producto</h2>
-                        <form action="#" method="get" class="Carga-product">
+                        <form action="/editProduc/<%= product.id %>?_method=PUT" method="POST" class="Carga-product">
                             <div class="datosProduct">
-                                <input type="text" required placeholder="Id" name="IdProduct">
+                                <input type="text" required placeholder="Id" name="IdProduct" >
                                 <input type="text" required placeholder="Tipo de Vehiculo" name="TypeVehicle">
-                                <input type="text" required placeholder="Ancho" name="detalleProduct">
-                                <input type="text" required placeholder="Perfil" name="ProfileProduct">
-                                <input type="text" required placeholder="Rodado" name="Rolled">
-                                <input type="text" required placeholder="Marca" name="mark">
-                                <input type="text" required placeholder="Modelo" name="model">
-                                <input type="text" required placeholder="Precio" name="priceProduct">
+                                <input type="text" required placeholder="Ancho" name="detalleProduct" value="<%= product.ancho %>">
+                                <input type="text" required placeholder="Perfil" name="ProfileProduct" value="<%= product.perfil %>">
+                                <input type="text" required placeholder="Rodado" name="Rolled" value="<%= product.rodado %>">
+                                <input type="text" required placeholder="Marca" name="mark" value="<%= product.marca %>">
+                                <input type="text" required placeholder="Modelo" name="model" value="<%= product.modelo %>">
+                                <input type="text" required placeholder="Precio" name="priceProduct" value="<%= product.precio %>">
                                 <div class="labelform">
                                     <label>Imagen del Producto</label>
                                 </div>
@@ -27,13 +27,17 @@
                                 </div>
 
                                 <div class="button-register">
-                                    <button type="submit"><a href="/">Editar Producto</a></button>
+                                    <button type="submit">Editar Producto</button>
                                     <button type="reset"><a href="/">Cancelar</a></button>
 
                                 </div>
-                                <div class= "eliminar"> 
-                                    <button type="delete"><a href="/">Eliminar producto</a></button>
+                                 
+                                    <form action="/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex"></form>
+                                    <div class= "eliminar"></div>
+                                    <button type="submit">Eliminar producto</button>
                                 </div>
+                                </form>
+                                
 
                             </div>   
                         </form>

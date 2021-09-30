@@ -14,19 +14,19 @@
 
                             <div class="productsDetails">
 
-                                <img width="200" height="280" class="imagen" src="./img/ofer-mich.webp">
+                                <img width="200" height="280" class="imagen" src="../img/ofer-mich.webp">
                                 <div class="descrip">
-                                    <li>Marca: </li>
-                                    <li>Modelo: </li>
-                                    <li>Rodado: </li>
-                                    <li>Ancho: </li>
-                                    <li>Perfil:</li>
-                                    <li>Precio:</li>
+                                    <li>Marca: <%= product.marca %></li>
+                                    <li>Modelo: <%= product.modelo %></li>
+                                    <li>Rodado: <%= product.rodado %></li>
+                                    <li>Ancho: <%= product.ancho %></li>
+                                    <li>Perfil: <%= product.perfil %></li>
+                                    <li>Precio: <%= product.precio %></li>
                                     <li>Descuento</li>
                                 </div>
                                 <div class="botones">
                                     <a href="#">Comprar</a>
-                                    <a href="/editProduc">Editar</a>
+                                    <a href="/editProduc/<%= product.id %>">Editar</a>
                                 </div>
                             </div>
                     </div>

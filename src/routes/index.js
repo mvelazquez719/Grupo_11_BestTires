@@ -19,8 +19,13 @@ router.post("/cargaProduc",productsController.store);
 router.get("/register", usersController.register);
 router.post("/register", usersController.storee);
 
+/*** GET ONE PRODUCT ***/ 
+router.get('/productID/:id', productsController.productID);
 
-router.get("/editProduc",productsController.editProduc);
-router.get("/productID",productsController.productID);
+
+router.get("/editProduc/:id",productsController.editProduc);
+router.put("/editProduc/:id",productsController.update);
+
+router.delete('/delete/:id', productsController.destroy);
 
 module.exports = router;
