@@ -23,6 +23,7 @@ const productsController = {
 			marca: req.body.mark,
 	     	modelo: req.body.model,
             precio: req.body.priceProduct,
+            img: req.file.filename
         }
         model.push(objeto)
         fs.writeFileSync(path.join(__dirname,'../model/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})

@@ -10,7 +10,7 @@
                 <main class="cargaP">
                     <div class="formulario">
                         <h2 class="tit-form">Carga de Productos</h2>
-                        <form action="/cargaProduc" method="POST" class="Carga-product">
+                        <form action="/cargaProduc" method="POST" class="Carga-product" enctype="multipart/form-data">
                             <div class="datosProduct">
                                 
                                 <input type="text" required placeholder="Ancho" name="detalleProduct">
@@ -23,7 +23,7 @@
                                     <label>Imagen del Producto</label>
                                 </div>
                                 <div class="exam">
-                                    <input type="file" name="img" accept=".jpg">
+                                    <input type="file" name="img">
                                 </div>
 
                                 <div class="button-register">

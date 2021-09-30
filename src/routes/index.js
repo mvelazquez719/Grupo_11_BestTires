@@ -3,6 +3,7 @@ const router = express.Router();
 const mainController= require("../controllers/mainController");
 const usersController= require("../controllers/usersController");
 const productsController= require("../controllers/productsController");
+const upload = require ('../middleware/multermidd')
 
 router.get("/", mainController.index);
 
@@ -13,7 +14,7 @@ router.get("/carrito", productsController.carrito);
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get("/cargaProduc",productsController.cargaProduc);
-router.post("/cargaProduc",productsController.store);
+router.post("/cargaProduc",upload.single('img'),productsController.store);
 
 /*** REGISTER ***/ 
 router.get("/register", usersController.register);
