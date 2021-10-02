@@ -235,14 +235,14 @@ section a img {
    color: white;
 
 }
-.eliminar a {
-   background-color: white ;
+.eliminar input {
+   background-color: rgb(255, 255, 255) ;
    color: rgb(197, 6, 6);
    
    font-weight: bold;
-   padding: 0 11vh;
+   padding: 5px;
 }
-.eliminar a:hover {
+.eliminar input:hover {
    background-color: rgb(197, 6, 6) ;
    color:white;   
 }

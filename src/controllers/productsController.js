@@ -70,7 +70,7 @@ const productsController = {
          model = model.filter (item => item.id != idBuscado)
         fs.writeFileSync(path.join(__dirname,'../model/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
 
-        res.render ('products', {products:model})
+        res.render ('products', {products:model});
 	
 		
 	}

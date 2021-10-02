@@ -22,16 +22,19 @@
                                     <li>Ancho: <%= product.ancho %></li>
                                     <li>Perfil: <%= product.perfil %></li>
                                     <li>Precio: <%= product.precio %></li>
-                                    <li>Descuento</li>
+                                    
                                 </div>
                                 <div class="botones">
                                     <a href="#">Comprar</a>
                                     <a href="/editProduc/<%= product.id %>">Editar</a>
+                                   
+                                </div>
+                                <div class= eliminar>
 
                                     <form method="POST"  action="/delete/<%= product.id %>?_method=DELETE">
-                                        <input type="submit" value="Eliminar" name="delete" class="btnForm">
+                                        <input type="submit" value="Eliminar producto" name="delete" class="btnForm">
                                     </form>
-                                </div>
+                                    </div>
                             </div>
                     </div>
                 </main>

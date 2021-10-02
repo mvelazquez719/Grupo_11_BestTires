@@ -12,6 +12,7 @@ Dado lo reducido del Sprint 1, no hemos detectado acciones que deberíamos dejar
 
 En conclusión debemos organizarnos más como equipo haciendo uso de las herremientas agile disponibles para estar mejor preparados para cuando las tareas exijan mayor complejidad y conflicto.
 
+
 Retrospectiva Sprint 2
 
 Siguiendo con la dinámica estrella de mar y luego de comenzar a implementar las acciones identificadas en la retro del primer sprint, hemos identificado nuevas mejoras a nuestra forma de trabajo a aplicar.
@@ -23,3 +24,12 @@ Siguiendo con la dinámica estrella de mar y luego de comenzar a implementar las
 Continuar con la comunicación informal para evacuar dudas y la realización de zooms.
 
 En el Sprint 2, detectamos más mejoras en el hacer más. Por el momento, no encontramos tareas que debemos dejar de hacer.
+
+
+Retrospectiva Sprint 3
+
+Mejoramos nuevas formas de trabajo con lo dado en el curso, aplicamos ejs, crud, archivos json, mejoramos los ruteos y los controladores, mejoramos la vista que no habia conformado en un 100% al profesor.
+
+Dividimos la tarea entre dos alumnos ya que un compañero se encontraba con problemas personales, por esa razon actuamos como un equipo de trabajo y repartimos las tareas para cubrir su falta.
+
+Mejoramos el uso del tablero de trabajo, mejoramos la comunicacion como compañeros y escuchamos las criticas constructivas.
