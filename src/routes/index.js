@@ -5,6 +5,7 @@ const usersController= require("../controllers/usersController");
 const productsController= require("../controllers/productsController");
 const upload = require ('../middleware/multermidd');
 const path = require ('path')
+
 const {body} = require ('express-validator');
 const validations = [
     body('firstName').notEmpty().withMessage('Tienes que escribir un nombre'),
