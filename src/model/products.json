@@ -10,16 +10,6 @@
         "img": "img-1633034875462-339771123combo x2 Pirelli.jpg"
     },
     {
-        "id": 3,
-        "ancho": "175",
-        "perfil": "65",
-        "rodado": "14",
-        "marca": "Firestone",
-        "modelo": "F-Series",
-        "precio": "13481",
-        "img": "img-1633035159323-523024129firestone.jpg"
-    },
-    {
         "id": 4,
         "ancho": "175",
         "perfil": "70",

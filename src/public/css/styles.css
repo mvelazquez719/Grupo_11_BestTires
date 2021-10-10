@@ -476,7 +476,19 @@ footer {
    margin:5vh;
    padding: 5vh;
    text-align: center;
-
+}
+.input1 {
+   display: flex;
+   justify-content: center;
+}
+.input1 input{
+   margin-bottom: 0;
+   width: 60%;
+}
+.input1error {
+   
+   display: flex;
+   justify-content: space-around;
 }
 
 .datospersonales input{
