@@ -481,14 +481,11 @@ footer {
    display: flex;
    justify-content: center;
 }
-.input1 input{
-   margin-bottom: 0;
-   width: 60%;
+.input1 input {
+   width: 70%;
 }
-.input1error {
-   
-   display: flex;
-   justify-content: space-around;
+.errores {
+   color:red;
 }
 
 .datospersonales input{

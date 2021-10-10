@@ -7,63 +7,66 @@
         <div class=container>
             <%- include("partials/header") -%>
                 <article class="form">
-                    
+
                     <div class="main-form">
-                        <% if (locals.errors){ %>
-                            <% for ( let oneError in errors) { %>
-                                <p> <%= errors[oneError].msg %></p>
-        
-                                <% } %>
-                                <% } %>
+
                         <h2 class="tit-form">Registrate</h2>
 
                         <h3 class="subtit-form">Completa tus datos</h3>
 
                         <form action="/register" method="POST" class="registro-form" enctype="multipart/form-data">
 
-                        <div class="input1">
-                            
-                            <input type="text"  placeholder="Nombre" name="firstName">
-                            <input type="text"  placeholder="Apellido" name="lastName">
+                            <div class="input1">
 
-                        </div>
+                                <input type="text" placeholder="Nombre" name="firstName">
+                                <input type="text" placeholder="Apellido" name="lastName">
 
-                        <div class="input1error">
-                            <p>Tienes que ingresar un nombre</p>
-                            <p>Tienes que ingresar un Apellido</p>
-
-                        </div>
-                        
-                        
-
-                        <div class="input1">
-
-                            <input type="text"  placeholder="Correo electronico" name="email">
-                            <input type="password"  placeholder="Contraseña" name="password">
-
-                        </div>
-
-                        <div class="input1error">
-                            <p>Tienes que ingresar un Correo electronico</p>
-                            <p>Tienes que ingresar un Contraseña</p>
-
-                        </div>
-
-                        <div>
-                            
-                            <div class="exam">
-                                <label>Imagen de Perfil:</label>
-                                <input type="file" name="img">
                             </div>
 
-                        </div>
+                            <div class="input1">
 
-                        <div class="button-register">
-                            <button type="submit">Enviar</button>
+                                <input type="text" placeholder="Correo electronico" name="email">
+                                <input type="password" placeholder="Contraseña" name="password">
 
+                            </div>
 
-                        </div>
-                    </form>
+                            <div>
+
+                                <div class="exam">
+                                    <label>Imagen de Perfil:</label>
+                                    <input type="file" name="img">
+                                </div>
+
+                            </div>
+
+                            <div class="button-register">
+                                <button type="submit">Enviar</button>
+                            </div>
+
+                            <% if (locals.errors && errors.firstName) { %>
+                                <p class="errores">
+                                    <%= errors.firstName.msg %>
+                                </p>
+                                <% } %>
+
+                                    <% if (locals.errors && errors.lastName) { %>
+                                        <p class="errores">
+                                            <%= errors.lastName.msg %>
+                                        </p>
+                                        <% } %>
+
+                                            <% if (locals.errors && errors.email) { %>
+                                                <p class="errores">
+                                                    <%= errors.email.msg %>
+                                                </p>
+                                                <% } %>
+
+                                                    <% if (locals.errors && errors.password) { %>
+                                                        <p class="errores">
+                                                            <%= errors.password.msg %>
+                                                        </p>
+                                                        <% } %>
+                        </form>
 
                     </div>
                 </article>
