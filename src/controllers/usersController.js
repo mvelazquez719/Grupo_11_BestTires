@@ -17,9 +17,12 @@ const usersController = {
         
         if (resultValidation.errors.length > 0){
             return res.render ('register',{
-                errors:resultValidation.mapped()  //<---- mapped ( vuelve el Array de errores a un objeto literal)
+                errors: resultValidation.mapped(),  //<---- mapped ( vuelve el Array de errores a un objeto literal)
+                oldData: req.body,
             });
         }
+
+        return res.send ('ok, las validaciones se pasaron y no tienen errores');
     },
     
     login:(req, res) => {

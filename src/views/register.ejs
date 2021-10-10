@@ -18,15 +18,16 @@
 
                             <div class="input1">
 
-                                <input type="text" placeholder="Nombre" name="firstName">
-                                <input type="text" placeholder="Apellido" name="lastName">
+                                <input type="text" placeholder="Nombre" name="firstName" value="<%= locals.oldData ? oldData.firstName : null  %>" >
+                                <input type="text" placeholder="Apellido" name="lastName" value="<%= locals.oldData ? oldData.lastName : null  %>">
+                              
 
                             </div>
 
                             <div class="input1">
 
-                                <input type="text" placeholder="Correo electronico" name="email">
-                                <input type="password" placeholder="Contraseña" name="password">
+                                <input type="text" placeholder="Correo electronico" name="email" value="<%= locals.oldData ? oldData.email : null  %>">
+                                <input type="password" placeholder="Contraseña" name="password" value="<%= locals.oldData ? oldData.password : null  %>">
 
                             </div>
 
@@ -66,6 +67,12 @@
                                                             <%= errors.password.msg %>
                                                         </p>
                                                         <% } %>
+
+                                                        <% if (locals.errors && errors.img) { %>
+                                                            <p class="errores">
+                                                                <%= errors.img.msg %>
+                                                            </p>
+                                                            <% } %>
                         </form>
 
                     </div>
