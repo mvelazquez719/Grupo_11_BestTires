@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-let model = require('../model/products.json')
+let model = require('../database/products.json')
 
 
 const productsController = {
@@ -26,7 +26,7 @@ const productsController = {
             img: req.file.filename
         }
         model.push(objeto)
-        fs.writeFileSync(path.join(__dirname,'../model/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
+        fs.writeFileSync(path.join(__dirname,'../database/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
 
         res.redirect ('products')
         
@@ -54,7 +54,7 @@ const productsController = {
 		});
 		
 		
-        fs.writeFileSync(path.join(__dirname,'../model/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
+        fs.writeFileSync(path.join(__dirname,'../database/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
         res.redirect ('products')
         
     },
@@ -68,7 +68,7 @@ const productsController = {
     destroy : (req, res) => {
         const idBuscado = req.params.id
          model = model.filter (item => item.id != idBuscado)
-        fs.writeFileSync(path.join(__dirname,'../model/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
+        fs.writeFileSync(path.join(__dirname,'../database/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
 
         res.render ('products', {products:model});
 	
