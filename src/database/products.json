@@ -6,7 +6,7 @@
         "rodado": "15",
         "marca": "Neumaticos Pirelli X2 COMBO",
         "modelo": "P1 CINT",
-        "precio": "42066",
+        "precio": "42950",
         "img": "img-1633034875462-339771123combo x2 Pirelli.jpg"
     },
     {
@@ -16,7 +16,7 @@
         "rodado": "13",
         "marca": "Neumaticos Fate COMBO x2",
         "modelo": "MaxiSport",
-        "precio": "23246",
+        "precio": "23801",
         "img": "img-1633035289653-645954001maxisport.jpg"
     },
     {
@@ -41,12 +41,12 @@
     },
     {
         "id": 7,
-        "ancho": "235",
+        "ancho": "500",
         "perfil": "75",
         "rodado": "15",
         "marca": "Neumatico Firestone",
         "modelo": "Destination",
-        "precio": "30468",
+        "precio": "30901",
         "img": "img-1633035609164-794537526firestone ultima.jpg"
     },
     {

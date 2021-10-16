@@ -28,7 +28,7 @@ const productsController = {
         model.push(objeto)
         fs.writeFileSync(path.join(__dirname,'../database/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
 
-        res.redirect ('products')
+        res.redirect ('products',{products})
         
 
     },
@@ -36,7 +36,7 @@ const productsController = {
     editProduc: (req, res) => {
         let id = req.params.id;
 		let product = model.find(elemento => elemento.id == id)
-		res.render ('editProduc',{product: product}); 
+		res.render ('editProduc',{products: product}); 
         
     },
     update: (req, res) => {
@@ -55,7 +55,7 @@ const productsController = {
 		
 		
         fs.writeFileSync(path.join(__dirname,'../database/products.json'),JSON.stringify(model,null,4),{encoding:'utf8'})
-        res.redirect ('products')
+        res.render ('products',{products:model});
         
     },
 

@@ -9,15 +9,15 @@
                 <main class="cargaP">
                     <div class="formulario">
                         <h2 class="tit-form">Editar Producto</h2>
-                        <form action="/editProduc/<%= product.id %>?_method=PUT" method="POST" class="Carga-product">
+                        <form action="/editProduc/<%= products.id %>?_method=PUT" method="POST" class="Carga-product">
                             <div class="datosProduct">
                                 
-                                <input type="text" required placeholder="Ancho" name="detalleProduct" value="<%= product.ancho %>">
-                                <input type="text" required placeholder="Perfil" name="ProfileProduct" value="<%= product.perfil %>">
-                                <input type="text" required placeholder="Rodado" name="Rolled" value="<%= product.rodado %>">
-                                <input type="text" required placeholder="Marca" name="mark" value="<%= product.marca %>">
-                                <input type="text" required placeholder="Modelo" name="model" value="<%= product.modelo %>">
-                                <input type="text" required placeholder="Precio" name="priceProduct" value="<%= product.precio %>">
+                                <input type="text" required placeholder="Ancho" name="detalleProduct" value="<%= products.ancho %>">
+                                <input type="text" required placeholder="Perfil" name="ProfileProduct" value="<%= products.perfil %>">
+                                <input type="text" required placeholder="Rodado" name="Rolled" value="<%= products.rodado %>">
+                                <input type="text" required placeholder="Marca" name="mark" value="<%= products.marca %>">
+                                <input type="text" required placeholder="Modelo" name="model" value="<%= products.modelo %>">
+                                <input type="text" required placeholder="Precio" name="priceProduct" value="<%= products.precio %>">
                                 <div class="labelform">
                                     <label>Imagen del Producto</label>
                                 </div>
