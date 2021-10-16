@@ -1,8 +1,8 @@
-const { log } = require('console');
+const path = require('path');
 const fs = require ('fs');
 
 const User = {
-    fileName: './database/users.json',
+    fileName: path.join(__dirname, '../database/users.json'),
 
     getData: function (){
         return JSON.parse(fs.readFileSync(this.fileName, 'utf-8')); // JSON.parse ( DE JASON a OBJETO LITERAL)
@@ -42,7 +42,7 @@ const User = {
         }
         allUsers.push(newUser);
         fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' ')); // JSON.stringify (DE OBJETO LITERAL a JSON)
-        return true;
+        return newUser;
     },
 
     delete: function (id){
@@ -53,4 +53,4 @@ const User = {
     }
 }
 
-    console.log(User.delete(4));
+module.exports = User ;

@@ -1,25 +1,3 @@
 [
- {
-  "id": 1,
-  "nombre": "matias",
-  "apellido": "gonzalez",
-  "nombreusuario": "gonmatiii",
-  "email": "gon@hotmail.com",
-  "contrasenia": 12345,
-  "contrasenia2": 12345
- },
- {
-  "id": 2,
-  "nombre": "lucas",
-  "apellido": "funes",
-  "nombreusuario": "lucas funes",
-  "email": "funeslucas@outlook.com",
-  "contrasenia": "asdasd",
-  "contrasenia2": "asdasd"
- },
- {
-  "id": 3,
-  "nombre": "matias",
-  "email": "lucas@outlook.com"
- }
+
 ]
