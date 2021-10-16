@@ -1,3 +1,10 @@
 [
-
+ {
+  "id": 1,
+  "firstName": "Lucas",
+  "lastName": "Funes",
+  "email": "funeslucas@outlook.com",
+  "password": "$2a$10$mQdSwBaesU72rEz.W98ECuAwe8sq/FM0oRk1lrLabRhjSzm2Q48MG",
+  "avatar": "img-1634416875073-542523604WIN_20210628_10_29_13_Pro.jpg"
+ }
 ]
