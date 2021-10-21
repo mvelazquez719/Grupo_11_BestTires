@@ -52,5 +52,5 @@ const User = {
         return true;
     }
 }
-
+//console.log(User.findByField('email', 'funeslucas@outlook.com'))  <-- probando metodo.
 module.exports = User ;

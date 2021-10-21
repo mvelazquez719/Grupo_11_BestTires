@@ -36,6 +36,7 @@ const validations = [
 router.get("/", mainController.index);
 
 router.get("/login", usersController.login);
+router.post("/login", usersController.loginProcces )
 router.get("/contacto", usersController.contacto);
 router.get("/products", productsController.products);
 router.get("/carrito", productsController.carrito);

@@ -4,7 +4,13 @@ const path = require("path");
 app.use(express.static(path.join(__dirname, "./public")));
 const rutasIndex = require("./routes/index.js");
 const methodOverride =  require('method-override'); // Para poder usar los métodos PUT y DELETE
+const session = require('express-session')
 
+app.use(session({
+  secret: 'shh',
+  resave: false,
+  saveUninitialized: false
+}))
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: false })); // Para poder utilizar formularios
 app.use(express.static('./public'))

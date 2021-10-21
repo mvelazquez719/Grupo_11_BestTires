@@ -47,7 +47,34 @@ const usersController = {
     },
     
     login:(req, res) => {
+        console.log(req.session);
        res.render('login');
+    },
+
+    loginProcces: (req,res) => {
+      let usuarioParaLogear = User.findByField('email',req.body.nameUsers);
+      if (usuarioParaLogear) {
+          let okPassword = bcryptjs.compareSync(req.body.password, usuarioParaLogear.password)
+          if (okPassword) {
+              return res.redirect('/')
+          }
+
+          return res.render ('login',{
+            errors: {
+                email:{
+                    msg: 'Las credenciales son invalidas'
+                }
+            }
+        })
+  
+      }
+      return res.render ('login',{
+        errors: {
+            email:{
+                msg: 'No se encuentra registrado'
+            }
+        }
+    })
     },
 
     contacto:(req, res) => {
