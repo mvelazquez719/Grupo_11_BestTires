@@ -56,6 +56,9 @@ const usersController = {
       if (usuarioParaLogear) {
           let okPassword = bcryptjs.compareSync(req.body.password, usuarioParaLogear.password)
           if (okPassword) {
+              delete usuarioParaLogear.password;
+              req.session.userLogged = usuarioParaLogear;
+              console.log(req.session);
               return res.redirect('/')
           }
 
@@ -75,11 +78,21 @@ const usersController = {
             }
         }
     })
+    console.log(req.session);
+    },
+
+    logout: (req, res) => {
+        req.session.destroy()
+        console.log(req.session)  // <-- Para probar si se cerro el login en session.
+        return res.redirect ('/')
+        ;
     },
 
     contacto:(req, res) => {
         res.render('contacto');
-     }
+     },
+
+
 }
 
 module.exports= usersController;

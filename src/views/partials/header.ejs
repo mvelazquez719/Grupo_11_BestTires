@@ -23,6 +23,24 @@
                     </a>
                 </li>
             </ul>
+
+           
+            <% if (isLogged) { %>
+            <ul class="navbar-nav-login">
+				
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="../img/default.png" width="40" style="border-radius: 100%;">
+							
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+							
+							<a class="dropdown-item" href="/logout/">Logout</a>
+						</ul>
+					</li>
+                    </ul>
+            <% } else { %>
             <ul class="nav-menu-right">
                 <li>
                     <a href="/login"> <i class="fas fa-sign-in-alt"></i>Iniciar Sesión </a>
@@ -35,5 +53,6 @@
                 </li>
 
             </ul>
+            <% } %>
         </nav>
 </header>

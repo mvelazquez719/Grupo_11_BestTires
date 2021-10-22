@@ -80,6 +80,9 @@ ul {
 .carrito i:hover {
    opacity: 0.5;
 }
+.navbar-nav-login{
+   padding-right: 50px;
+}
 /*menu rigth*/
 .nav-menu-right{
    display: flex;

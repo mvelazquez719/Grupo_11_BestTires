@@ -5,6 +5,7 @@ const usersController= require("../controllers/usersController");
 const productsController= require("../controllers/productsController");
 const upload = require ('../middleware/multermidd');
 const path = require ('path')
+const guestMiddleware = require ('../middleware/guestmidd');
 
 const {body} = require ('express-validator');
 const validations = [
@@ -35,8 +36,11 @@ const validations = [
 
 router.get("/", mainController.index);
 
-router.get("/login", usersController.login);
-router.post("/login", usersController.loginProcces )
+router.get("/login", guestMiddleware, usersController.login);
+router.post("/login", usersController.loginProcces );
+
+router.get("/logout", usersController.logout )
+
 router.get("/contacto", usersController.contacto);
 router.get("/products", productsController.products);
 router.get("/carrito", productsController.carrito);
@@ -47,7 +51,7 @@ router.post("/cargaProduc",upload.single('img') ,productsController.store);
 
 
 /*** REGISTER ***/ 
-router.get("/register", usersController.register);
+router.get("/register", guestMiddleware, usersController.register);
 /*** PROCESA REGISTER ***/ 
 router.post("/register",upload.single('img'),validations, usersController.processRegister);
 
