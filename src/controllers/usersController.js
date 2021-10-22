@@ -58,7 +58,7 @@ const usersController = {
           if (okPassword) {
               delete usuarioParaLogear.password;
               req.session.userLogged = usuarioParaLogear;
-              console.log(req.session);
+              //console.log(req.session);   <-- Para mostrar session activa
               return res.redirect('/')
           }
 
@@ -83,7 +83,7 @@ const usersController = {
 
     logout: (req, res) => {
         req.session.destroy()
-        console.log(req.session)  // <-- Para probar si se cerro el login en session.
+        //console.log(req.session)  // <-- Para probar si se cerro el login en session.
         return res.redirect ('/')
         ;
     },

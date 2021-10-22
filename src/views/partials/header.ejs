@@ -30,13 +30,13 @@
 				
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							<img src="../img/default.png" width="40" style="border-radius: 100%;">
+							<img src="../img/<%= locals.userLogged.avatar %>" width="40" style="border-radius: 100%;">
 							
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							
 							
-							<a class="dropdown-item" href="/logout/">Logout</a>
+							<a class="dropdown-item" href="/logout/"><%= locals.userLogged.firstName %> </a>
 						</ul>
 					</li>
                     </ul>
