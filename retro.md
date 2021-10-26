@@ -1,4 +1,4 @@
-##Retrospectiva Sprint 1
+## Retrospectiva Sprint 1
 
 En base a la implementación de la dinámica estrella de mar a la finalización del primer Sprint, hemos identificado un conjunto de acciones a aplicar en nuestra forma de trabajo.
 
