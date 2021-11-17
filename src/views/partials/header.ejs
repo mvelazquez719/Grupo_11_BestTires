@@ -36,8 +36,12 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							
 							
-							<a class="dropdown-item" href="/logout/"><%= locals.userLogged.firstName %> </a>
+							<a class="dropdown-item" href="/logout/">// Cerrar Sesion <%= locals.userLogged.firstName %> </a>
 						</ul>
+
+                        <li>
+                            <a href="/cargaProduc"><i class="fas fa-cloud-upload-alt"></i>Cargar Producto</a>
+                        </li>
 					</li>
                     </ul>
             <% } else { %>
@@ -48,9 +52,7 @@
                 <li>
                     <a href="/register"><i class="far fa-address-card"></i>Registrate </a>
                 </li>
-                <li>
-                    <a href="/cargaProduc"><i class="fas fa-cloud-upload-alt"></i>Cargar Producto</a>
-                </li>
+              
 
             </ul>
             <% } %>
