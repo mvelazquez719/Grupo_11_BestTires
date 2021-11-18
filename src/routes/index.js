@@ -7,7 +7,10 @@ const upload = require ('../middleware/multermidd');
 const path = require ('path')
 const guestMiddleware = require ('../middleware/guestmidd');
 
+const {usuarios}= require('../controllers')
+
 const {body} = require ('express-validator');
+const usuario = require('../database/models/usuario0000');
 const validations = [
     body('firstName').notEmpty().withMessage('Tienes que escribir un nombre'),
     body('lastName').notEmpty().withMessage('Tienes que escribir un apellido'),
@@ -43,6 +46,8 @@ router.get("/logout", usersController.logout )
 
 router.get("/contacto", usersController.contacto);
 router.get("/products", productsController.products);
+router.get("/prueba", usuarios.getUsuario);
+
 router.get("/carrito", productsController.carrito);
 
 /*** CREATE ONE PRODUCT ***/ 

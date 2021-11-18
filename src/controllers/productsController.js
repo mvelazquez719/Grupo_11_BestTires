@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-let model = require('../database/products.json')
+//let model = require('../database/products.json')
 
 
 const productsController = {
