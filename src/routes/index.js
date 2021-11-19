@@ -44,6 +44,9 @@ router.get("/login", guestMiddleware, usersController.login);
 router.post("/login", usuarios.loginProcces );
 
 router.get("/logout", usersController.logout )
+router.get("/detalleUsuario/:id", usuarios.detalleUsuario )
+router.post("/editUsuario/:id", usuarios.editUsuario )
+
 
 router.get("/contacto", usersController.contacto);
 router.get("/products", productsController.products);

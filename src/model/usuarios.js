@@ -26,16 +26,31 @@ const usuarioModel = {
     
    },
 
-
-
-
-
    findByField: async function  (field, text){
     let allUsers = await this.getUsuario()
     
     let userFound= allUsers.find(oneUser => oneUser[field] === text);
     return userFound;
 },
+
+
+
+
+
+
+
+    editUsuario: async (user) => {
+        const response = await db.Usuarios.update(
+            {
+                 ...user
+            },
+            {
+                where: {
+                    id: user.id
+                }
+            }
+        )
+    }
 }
 
 module.exports = usuarioModel

@@ -1,6 +1,9 @@
 const {usuarioModel} = require("../model")
 const bcryptjs = ("bcrypts");
 
+const db = require("../database/models");
+const { response } = require("express");
+
 const usuariosController = {
 
     getUsuario : async (req,res,next) => {
@@ -33,13 +36,26 @@ const usuariosController = {
         }
         
     },
+    detalleUsuario: (req, res, next) => {
+        res.render('detalleUsuario', {user: req.session.userLogged});
+    },
 
 
 
 
 
 
-
+    editUsuario: async (req,res,next) => {
+       
+        try {
+            let response = await  usuarioModel.editUsuario(req.body)
+        }catch (error) {
+            console.log(`fallo consulta a la base de datos ${error.message}`)
+            return []
+        }
+        
+      res.redirect("/userProfile")
+    },
 
 
 
