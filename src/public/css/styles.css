@@ -249,7 +249,11 @@ section a img {
    background-color: rgb(197, 6, 6) ;
    color:white;   
 }
+/*usuarios*/
 
+.titulousuario{
+   padding: 20px;
+}
 
 /*footer*/
 

@@ -52,34 +52,34 @@ const usersController = {
     },
 
     loginProcces: (req,res) => {
-      let usuarioParaLogear = User.findByField('email',req.body.nameUsers);
-      if (usuarioParaLogear) {
-          let okPassword = bcryptjs.compareSync(req.body.password, usuarioParaLogear.password)
-          if (okPassword) {
-              delete usuarioParaLogear.password;
-              req.session.userLogged = usuarioParaLogear;
-              //console.log(req.session);   <-- Para mostrar session activa
-              return res.redirect('/')
-          }
-
-          return res.render ('login',{
-            errors: {
-                email:{
-                    msg: 'Las credenciales son invalidas'
-                }
+        let usuarioParaLogear = User.findByField('email',req.body.nameUsers);
+        if (usuarioParaLogear) {
+            let okPassword = bcryptjs.compareSync(req.body.password, usuarioParaLogear.password)
+            if (okPassword) {
+                delete usuarioParaLogear.password;
+                req.session.userLogged = usuarioParaLogear;
+                //console.log(req.session);   <-- Para mostrar session activa
+                return res.redirect('/')
             }
-        })
   
-      }
-      return res.render ('login',{
-        errors: {
-            email:{
-                msg: 'No se encuentra registrado'
-            }
+            return res.render ('login',{
+              errors: {
+                  email:{
+                      msg: 'Las credenciales son invalidas'
+                  }
+              }
+          })
+    
         }
-    })
-    console.log(req.session);
-    },
+        return res.render ('login',{
+          errors: {
+              email:{
+                  msg: 'No se encuentra registrado'
+              }
+          }
+      })
+      console.log(req.session);
+      },
 
     logout: (req, res) => {
         req.session.destroy()

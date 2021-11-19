@@ -10,7 +10,8 @@ const guestMiddleware = require ('../middleware/guestmidd');
 const {usuarios}= require('../controllers')
 
 const {body} = require ('express-validator');
-const usuario = require('../database/models/usuario0000');
+const { createUsuario } = require('../model/usuarios');
+
 const validations = [
     body('firstName').notEmpty().withMessage('Tienes que escribir un nombre'),
     body('lastName').notEmpty().withMessage('Tienes que escribir un apellido'),
@@ -40,13 +41,13 @@ const validations = [
 router.get("/", mainController.index);
 
 router.get("/login", guestMiddleware, usersController.login);
-router.post("/login", usersController.loginProcces );
+router.post("/login", usuarios.loginProcces );
 
 router.get("/logout", usersController.logout )
 
 router.get("/contacto", usersController.contacto);
 router.get("/products", productsController.products);
-router.get("/prueba", usuarios.getUsuario);
+router.get("/userProfile", usuarios.profile);
 
 router.get("/carrito", productsController.carrito);
 
@@ -58,7 +59,8 @@ router.post("/cargaProduc",upload.single('img') ,productsController.store);
 /*** REGISTER ***/ 
 router.get("/register", guestMiddleware, usersController.register);
 /*** PROCESA REGISTER ***/ 
-router.post("/register",upload.single('img'),validations, usersController.processRegister);
+//router.post("/register",upload.single('img'),validations, usersController.processRegister);
+router.post("/register",upload.single('img'),validations, usuarios.createUsuario);
 
 
 /*** GET ONE PRODUCT ***/ 
