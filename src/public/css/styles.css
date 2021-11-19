@@ -43,6 +43,10 @@ ul {
    font-size: 25px;
    display:none;
 }
+.bodyuser {
+   background-color: white;
+   background-image: none;
+}
 
 
 /*menu left*/

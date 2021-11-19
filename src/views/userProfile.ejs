@@ -3,22 +3,26 @@
 
 <%- include("partials/head") -%>
 
-    <body>
+    <body class="bodyuser">
         <div class=container>
             <%- include("partials/header") -%>
                 <hr>
-                <main>
-                    <div class="container" style="margin-top: 40px;">
+                <main class="mainuser">
+                    <div class="big-container">
+                        <div class="right-container">
+                        <div class="container" style="margin-top: 40px;">
                         <div class="row">
                             <div class="col-md-3">
-                                <h2>Hola! <%= user.nomnre %> <%= user.apellido %> </h2>
-                                <img src="/images/avatars/<%= user.avatar %> ">
+                                <h2>Hola! <%= user.nombre %> <%= user.apellido %> </h2>
+                                <img src="../img/<%= locals.userLogged.avatar %>">
                                 <br>
                                 <br>
                                 <div class="alert alert-success"><%= user.email %> </div>
-                            </div>
+                                </div>
+                             </div>
+                           </div>
                         </div>
-                    </div>
+                      </div>
                 </main>
         </div>
 

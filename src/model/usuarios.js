@@ -1,5 +1,5 @@
 const db = require("../database/models")
-const bcrypt = require ('bcrypt')
+const bcryptjs = require ('bcryptjs')
 
 const usuarioModel = {
 
@@ -14,20 +14,22 @@ const usuarioModel = {
    },
 
    createUsuario: async (usuario) => {
-       try {
-         const response = await db.Usuarios.create(
-             {
-                 ...usuario,
-                
-
-             }
-         )
-
-       } catch (error) {
-           console.log(`fallo consulta a la base de datos ${error.message}`)
-           return []
-       }
+    
+    try {
+     const response = await db.Usuarios.create(usuario)
+     //console.log(response)  < Para ver si se creo correctamente 
+         
+     } catch (error) {
+        console.log(`fallo consulta a la base de datos ${error.message}`)
+        return []
+    }
+    
    },
+
+
+
+
+
    findByField: async function  (field, text){
     let allUsers = await this.getUsuario()
     
@@ -37,3 +39,5 @@ const usuarioModel = {
 }
 
 module.exports = usuarioModel
+
+

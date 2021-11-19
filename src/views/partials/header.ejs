@@ -30,7 +30,7 @@
 				
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							<img src="../img/<%= locals.userLogged.avatar %>" width="40" style="border-radius: 100%;">
+							<a href="/userProfile"><img src="../img/<%= locals.userLogged.avatar %>" width="40" style="border-radius: 100%;"></a>
 							
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,7 +42,7 @@
                         <li>
                             <a href="/cargaProduc"><i class="fas fa-cloud-upload-alt"></i>Cargar Producto</a>
                         </li>
-					</li>
+					</li> 
                     </ul>
             <% } else { %>
             <ul class="nav-menu-right">
