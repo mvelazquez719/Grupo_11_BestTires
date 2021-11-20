@@ -45,7 +45,9 @@ router.post("/login", usuarios.loginProcces );
 
 router.get("/logout", usersController.logout )
 router.get("/detalleUsuario/:id", usuarios.detalleUsuario )
-router.post("/editUsuario/:id", usuarios.editUsuario )
+router.put("/detalleUsuario/:id",upload.single('avatar'),validations, usuarios.editUsuario )
+
+router.get("/lista", usuarios.getUsuario )
 
 
 router.get("/contacto", usersController.contacto);

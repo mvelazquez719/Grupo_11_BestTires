@@ -78,7 +78,7 @@ const usersController = {
               }
           }
       })
-      console.log(req.session);
+      //console.log(req.session);
       },
 
     logout: (req, res) => {

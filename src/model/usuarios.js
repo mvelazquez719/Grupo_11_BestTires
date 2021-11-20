@@ -1,5 +1,7 @@
 const db = require("../database/models")
 const bcryptjs = require ('bcryptjs')
+const usuariosController = require("../controllers/usuarios")
+const { response } = require("express")
 
 const usuarioModel = {
 
@@ -35,10 +37,35 @@ const usuarioModel = {
 
 
 
+    editUsuario : async (id,user) => {
+        
+        try {
+            
+            const respuesta = await db.Usuarios.findByPk(id)
+            
+            const response = await db.Usuarios.update(
+                {
+                    ...user
+                },
+                {
+                    where: {
+                        id:id
+                    }
+                }
+            )
+            
+            
+           
+        } catch (error){
+            console.log(`fallo consulta a la base de datos ${error.message}`)
+        return []
+        }
+        
+
+    }
 
 
-
-
+/*
     editUsuario: async (user) => {
         console.log(user)
         const response = await db.Usuarios.update(
@@ -52,7 +79,7 @@ const usuarioModel = {
                 }
             }
         )
-    }
+    }*/
 }
 
 module.exports = usuarioModel

@@ -7,16 +7,19 @@ const { response } = require("express");
 const usuariosController = {
 
     getUsuario : async (req,res,next) => {
-        const respuesta = await usuarioModel.getUsuario()
-        res.render('listaUsuarios', {products: respuesta});
+        let id = 1
+        const respuesta = await usuarioModel.getUsuario(id)
+        res.send(respuesta);
     },
 
-    profile : (req, res, next) => {
-        res.render ('userProfile', {user: req.session.userLogged})
+    profile :async (req, res, next) => {
+        let id = req.session.userLogged.id
+        const respuesta = await db.Usuarios.findByPk(id)
+        res.render ('userProfile', {user: respuesta})
     },
 
     createUsuario: async (req, res, next) => {
-
+        
        let  userToCreate = {
             nombre: req.body.nombre,
             apellido: req.body.apellido,
@@ -37,34 +40,38 @@ const usuariosController = {
         
     },
     detalleUsuario: async (req, res, next) => {
-        
-        res.render('detalleUsuario', {user: req.session.userLogged});
+
+    
+        let id = req.params.id
+        const respuesta = await db.Usuarios.findByPk(id)
+         res.render('detalleUsuario', {user: respuesta});
+         
     },
 
 
-
+    
 
 
 
     editUsuario: async (req,res,next) => {
 
+        console.log(req.body)
         
-        let userEdit = {
-            id:req.params.id,
-            nombre: req.body.nombre,
-            apellido: req.body.apellido,
-            email: req.body.email,
-            password: req.body.password
-        }
         
         try {
-            let response = await  usuarioModel.editUsuario(userEdit)
+            
+            let id = req.params.id
+        const respuesta = await usuarioModel.editUsuario(id, req.body)
+        
+        
+
+            //let response = await  usuarioModel.editUsuario(respuesta)
         }catch (error) {
             console.log(`fallo consulta a la base de datos ${error.message}`)
             return []
         }
-        
-      res.redirect("/userProfile")
+        res.redirect("/userProfile")
+      
     },
 
 
@@ -107,4 +114,8 @@ const usuariosController = {
     
 }
 
+
 module.exports = usuariosController
+
+
+  
