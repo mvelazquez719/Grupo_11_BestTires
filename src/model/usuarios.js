@@ -40,6 +40,7 @@ const usuarioModel = {
 
 
     editUsuario: async (user) => {
+        console.log(user)
         const response = await db.Usuarios.update(
             {
                 

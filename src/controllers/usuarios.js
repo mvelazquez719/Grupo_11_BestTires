@@ -36,7 +36,8 @@ const usuariosController = {
         }
         
     },
-    detalleUsuario: (req, res, next) => {
+    detalleUsuario: async (req, res, next) => {
+        
         res.render('detalleUsuario', {user: req.session.userLogged});
     },
 
@@ -46,13 +47,16 @@ const usuariosController = {
 
 
     editUsuario: async (req,res,next) => {
-       let userEdit = {
-           id:req.params.id,
-           nombre: req.body.nombre,
-           apellido: req.body.apellido,
-           email: req.body.email,
-           password: req.body.password
-       }
+
+        
+        let userEdit = {
+            id:req.params.id,
+            nombre: req.body.nombre,
+            apellido: req.body.apellido,
+            email: req.body.email,
+            password: req.body.password
+        }
+        
         try {
             let response = await  usuarioModel.editUsuario(userEdit)
         }catch (error) {
