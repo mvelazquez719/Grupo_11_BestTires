@@ -42,6 +42,7 @@ const usuarioModel = {
     editUsuario: async (user) => {
         const response = await db.Usuarios.update(
             {
+                
                  ...user
             },
             {

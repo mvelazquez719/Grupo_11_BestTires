@@ -21,7 +21,7 @@ const usuariosController = {
             nombre: req.body.nombre,
             apellido: req.body.apellido,
             email: req.body.email,
-            password: req.body.email,
+            password: req.body.password,
             avatar: req.file.filename
        }
 
@@ -46,9 +46,15 @@ const usuariosController = {
 
 
     editUsuario: async (req,res,next) => {
-       
+       let userEdit = {
+           id:req.params.id,
+           nombre: req.body.nombre,
+           apellido: req.body.apellido,
+           email: req.body.email,
+           password: req.body.password
+       }
         try {
-            let response = await  usuarioModel.editUsuario(req.body)
+            let response = await  usuarioModel.editUsuario(userEdit)
         }catch (error) {
             console.log(`fallo consulta a la base de datos ${error.message}`)
             return []
